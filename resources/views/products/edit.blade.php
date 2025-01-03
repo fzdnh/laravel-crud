@@ -12,7 +12,7 @@
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Price (RM)</label>
-            <input type="number" name="price" id="price" class="form-control" value="{{ $product->price }}" required>
+            <input type="number" name="price" id="price" class="form-control" value="{{ $product->price }}" step="0.01" required>
         </div>
         <div class="mb-3">
             <label for="details" class="form-label">Details</label>

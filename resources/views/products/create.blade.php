@@ -7,15 +7,15 @@
         @csrf
         <div class="mb-3">
             <label for="name" class="form-label">Name</label>
-            <input type="text" name="name" id="name" class="form-control" required>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
         </div>
         <div class="mb-3">
             <label for="price" class="form-label">Price (RM)</label>
-            <input type="number" name="price" id="price" class="form-control" required>
+            <input type="number" name="price" id="price" class="form-control" placeholder="99.90" step="0.01" required>
         </div>
         <div class="mb-3">
             <label for="details" class="form-label">Details</label>
-            <textarea name="details" id="details" class="form-control"></textarea>
+            <textarea name="details" id="details" class="form-control" placeholder="Details"></textarea>
         </div>
         <div class="mb-3">
             <label class="form-label">Publish</label>

@@ -2,7 +2,19 @@
 @section('content')
 <div class="container mt-4">
     <h1>Laravel</h1>
+
+    <!-- Create New Product Button -->
     <a href="{{ route('products.create') }}" class="btn btn-success float-end">Create New Product</a>
+
+    <!-- Search Form -->
+    <form action="{{ route('products.index') }}" method="GET" class="mt-3 d-flex">
+        <div class="input-group" style="width: 300px; padding-right: 10px;">
+            <input type="text" name="search" class="form-control" placeholder="Search by product name" value="{{ request()->search }}" style="padding: 5px;">
+            <button class="btn btn-primary" type="submit" style="padding: 5px 15px;">Search</button>
+        </div>
+    </form>
+
+    <!-- Products Table -->
     <table class="table table-striped table-hover mt-3">
         <thead>
             <tr>
